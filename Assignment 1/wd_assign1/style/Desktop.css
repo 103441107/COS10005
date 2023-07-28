@@ -1,0 +1,252 @@
+/*---------------------------------
+-----------------------------------
+-------Desktop Optimised CSS-------
+-----------------------------------
+-----------------------------------
+
+Huy Nguyen Gia, 103441107 */
+
+
+/* Color for all Pages */
+body {
+	background: #f6f6f6
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #000000;
+    overflow: hidden;
+}
+nav a {
+	font-family: "Montserrat Black", sans-serif;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/*Underline From Center*/
+nav a:hover {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+nav a:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 51%;
+	right: 51%;
+	bottom: 0;
+	background: #FF0004;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+nav a:hover, nav a:focus, nav a:active {
+	color: red;
+}
+nav a:hover:before, nav a:focus:before, nav a:active:before {
+	left: 0;
+	right: 0;
+}
+
+/* Main website text styling */
+body {
+	font-family: "Open Sans", sans-serif;
+/*Small margins added to ensure text fits on all screens, even those with under/over scaning monitors*/
+	margin-left:5%;
+	margin-right:5%;
+}
+
+/* Header/logo Title */
+.header {
+	padding: 20px;
+	text-align: center;
+	background: #dc2d27;
+	color: yellow;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+	font-size: 50px;
+	font-family: "Open Sans" , sans-serif;
+}
+
+/* Footer */
+.footer {
+	padding: 1px; 
+	margin-top:10px;
+	text-align: center;
+	background: #343642;
+	color:#E4E4E4;
+}
+
+/*CSS Styling for form/table elements*/
+.timetable {
+	width:100%;
+	padding:2px;
+}
+
+.timetable th, td {
+	padding:0.5%;
+	width:16.667%;
+}
+
+.form {
+    width: 580px;
+    padding: 10px;
+    border: 5px solid grey;
+    margin: 0;
+    display:inline-block;
+}
+
+.achivements {
+	float:left;
+	width:48%
+}
+
+.aside {
+	float:right;
+	width:auto;
+	margin-right:15%;
+}
+
+/*CSS Styling used for columns on the 'Hobbies'and 'Interests' text section*/
+.content_container {
+	display: flex;
+	align-items: flex-start;
+	align-content: center;
+}
+
+.column  {
+	width: 33.334%;
+  /* 3 columns per row, 100/3 = 33.334 */
+	padding: 15px;
+	margin: 0 auto;
+}
+
+/*CSS Styling for Images and allignments*/
+.Formal{
+	margin-left:5%;
+	margin-right:5%;
+	margin-top:1%;
+	width: 90%;
+	-webkit-animation-name:slideintop;
+	-webkit-animation-duration:1.5s;
+	animation-name:slideintop;
+	animation-duration:1.5s;
+}
+
+.hobbie_familynfriends{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.hobbie_films{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.hobbie_gaming{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.hobbie_music{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+.hobbie_soccer{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+.hobbie_gamesonline{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+}
+
+.fpier{
+    display: block;
+    margin-left: 3%;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 20%; 
+}
+
+.fpier2{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	width:88%;
+	margin-left:5%;
+	margin-top:1%;
+	-webkit-animation-name:slideintop;
+	-webkit-animation-duration:1.5s;
+	animation-name:slideintop;
+	animation-duration:1.5s;
+}
+
+.fpier3{
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	width:40%;
+	margin-left:5%;
+	margin-top:1%;
+	-webkit-animation-name:slideintop;
+	-webkit-animation-duration:1.5s;
+	animation-name:slideintop;
+	animation-duration:1.5s;
+}
+
+/*CSS animations(*/
+.animate {
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:1.5s;
+	animation-name:fade;
+	animation-duration:1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@keyframes fade {
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes slideintop {
+	from {margin-top:20%;}
+	to {margin-top:5%;}
+}
+
+@keyframes slideintop {
+	from {margin-top:20%;}
+	to {margin-top:1%;}
+}
